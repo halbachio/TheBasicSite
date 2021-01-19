@@ -1,0 +1,53 @@
+include ../mixins/mixins
+doctype doctype
+html(lang='en')
+    head
+        - const siteName = { name:'Robert' }
+        +meta(siteName)
+    body#main.profile
+        .noise
+        .wrapper
+            include ../includes/nav
+            #content
+                .grid
+                    .grid-item.grid-item-1
+                        .image
+                            img(src="images/profile-img.png", alt="")
+                        .desc
+                            h1  Robert Halbach
+                            p   "A UI &amp; Web Designer from Cologne enjoying playing around with code."
+                    .grid-item.grid-item-2
+                        .actions
+                            .action.action-1.open
+                                .action-header
+                                    span.description Your Orders
+                                    span.icon +
+                                .action-content
+                                    span.bar
+                                        hr
+                                    .order.oder-1
+                                        - var details = { nr:'2830183', date:'01.01.2021', amount:'271', status:'pending' }
+                                        +order(details)
+                                    .order.oder-2
+                                        - var details = { nr:'2830184', date:'01.01.2021', amount:'271', status:'delivered' }
+                                        +order(details)
+                                    .order.oder-3
+                                        - var details = { nr:'2830182', date:'01.01.2021', amount:'271', status:'delivered' }
+                                        +order(details)
+                            .action.action-2
+                                .action-header
+                                    span.description Returns
+                                    span.icon +
+                            .action.action-3
+                                .action-header
+                                    span.description Account Settings
+                                    span.icon +
+                            .action.action-4
+                                .action-header
+                                    span.description Promo Codes
+                                    span.icon +
+                            .action.action-5.logout
+                                .action-header
+                                    span.description Log Out
+                        
+        include ../includes/footer

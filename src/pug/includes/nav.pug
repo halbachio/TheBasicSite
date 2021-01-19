@@ -1,0 +1,28 @@
+nav#nav-main
+    .nav-left
+        a.home(href='index.html')
+            include logo
+
+    ul.nav-right
+        li.nav-item
+            a(href='index.html')
+                span.nav-icon
+                    img.default(src='images/icon-home.svg')
+                    img.active(src='images/icon-home-f.svg')
+                | Home
+        li.nav-item
+            a(href='')
+                span.nav-icon
+                    img.default(src='images/icon-heart.svg')
+                    img.active(src='images/icon-heart-f.svg')
+                | Favorites
+        li.nav-item
+            a(href='bag.html')
+                span.nav-icon
+                    img.default(src='images/icon-bag.svg')
+                    img.active(src='images/icon-bag-f.svg')
+                | Bag
+        li.nav-item
+            a(href='profile.html')
+                img.profile-img(src='images/profile-img.png' alt='')
+                | Robert

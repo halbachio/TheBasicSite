@@ -1,0 +1,871 @@
+@media screen and (max-width: 2000px) {
+	.wrapper {
+		padding: 0 40px;
+	}
+	#nav-main,
+	#content {
+		padding: 0;
+		.grid {
+			grid-template-areas: ". one one one one . . ." "six six six six four four nine nine" "six six six six four four nine nine" "six six six six eight eight seven seven" "six six six six eight eight seven seven" " . five five . two two three three";
+			.grid-item {
+				min-height: 500px;
+			}
+		}
+	}
+	.profile {
+		#content {
+			.grid {
+				.grid-item-1 {
+					&:before {
+						width: 60px;
+						left: -40px;
+					}
+					&:after {
+						width: 60px;
+						right: -40px;
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 1800px) {
+	.profile {
+		#content {
+			.grid {
+				.grid-item-1 {
+					.desc {
+						max-width: 50%;
+					}
+				}
+			}
+		}
+	}
+
+}
+@media screen and (max-width: 1700px) {
+	.product {
+		.desc {
+			h1,
+			.price {
+				font-size: 40px !important;
+			}
+		}
+	}
+	#content {
+		.grid {
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: auto;
+			grid-template-areas: ". one one one one one . . ." "six six six six six six four four four" "six six six six six six four four four" "six six six six six six eight eight eight" "six six six six six six eight eight eight" " . five five five five . two two two" " nine nine nine seven seven seven three three three";
+			.grid-item {
+				min-height: 600px;
+			}
+		}
+	}
+}
+@media screen and (max-width: 1380px) {
+	.product {
+		.desc {
+			h1,
+			.price {
+				font-size: 36px !important;
+			}
+			p {
+				font-size: 24px !important;
+			}
+		}
+	}
+	#content {
+		.grid {
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: auto;
+			grid-template-areas: ". one one one one one . . ." "six six six six six six four four four" "six six six six six six four four four" "six six six six six six eight eight eight" "six six six six six six eight eight eight" " . five five five five . two two two" " nine nine nine seven seven seven three three three";
+			.grid-item {
+				min-height: 550px;
+			}
+		}
+	}
+	footer {
+		svg {
+			max-width: 400px;
+		}
+	}
+	.legal {
+		#content {
+			.grid {
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+                grid-template-rows: auto;
+				grid-template-areas: "one two two two two two three";
+			}
+		}
+	}
+	.profile {
+		#content {
+			.grid {
+				display: flex;
+				flex-direction: column;
+				.grid-item-2 {
+					margin: 0 100px;
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 1230px) {
+	#content {
+		.grid {
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: auto;
+			grid-template-areas: ". one one one . ." "six six six six four four" "six six six six four four" "six six six six eight eight" "six six six six eight eight" " . five five . two two" " nine nine seven seven three three";
+			.grid-item {
+				min-height: 450px;
+				.card {
+					h1 {
+						font-size: 44px;
+					}
+				}
+			}
+		}
+	}
+	.product {
+		#content {
+			.grid {
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: auto;
+				grid-template-areas: "one two";
+			}
+		}
+	}
+}
+@media screen and (max-width: 1050px) {
+	.profile {
+		#content {
+			.grid {
+				display: flex;
+				flex-direction: column;
+				.grid-item-1 {
+					.desc {
+						max-width: 70%;
+					}
+				}
+				.grid-item-2 {
+					margin: 0 40px;
+				}
+			}
+		}
+	}
+	#content {
+		.grid {
+			grid-gap: 20px;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: auto;
+			grid-template-areas: "one one one one one ." "six six six four four four" "two two two eight eight eight" " five five . three three three" " nine nine nine seven seven seven";
+			.grid-item {
+				min-height: 400px;
+				background-size: contain;
+				background-position: center !important;
+				&-8 {
+					background-size: 70%;
+				}
+				&-2 {
+					background-size: 80%;
+				}
+				.prod-desc {
+					height: 100%;
+					flex-direction: column;
+					> * {
+						padding: 18px;
+					}
+					.name {
+						order: 1;
+						align-self: flex-start;
+					}
+					.price {
+						order: 0;
+						background: darken($color-bg, 10%);
+						background: $color-bg;
+						transform: translate3d(-8px,8px,0);
+						padding: 12px 14px 11px;
+						border-radius: 6px;
+						color: mix($color-primary, $color-bg, 80%);
+					}
+				}
+			}
+		}
+	}
+	footer {
+		.wrapper {
+			> div:not(.copyright) {
+				margin-left: 50px;
+			}
+		}
+		svg {
+			max-width: 300px;
+		}
+	}
+	.product {
+		#content {
+			.grid {
+                grid-template-columns: 1fr;
+                grid-template-rows: auto;
+				grid-template-areas: "one" "two";
+				.grid-item {
+					&.prod {
+						overflow: visible;
+						min-height: 50vh;
+						background-color: darken($color-bg, 5%);
+						border-radius: 0px;
+						background-size: cover;
+						&:before {
+							content: '';
+							height: 100%;
+							width: 30px;
+							position: absolute;
+							background-color: darken($color-bg, 5%);
+							top: 0;
+							left: -30px;
+						}
+						&:after {
+							content: '';
+							height: 100%;
+							width: 30px;
+							position: absolute;
+							background: darken($color-bg, 5%);
+							top: 0;
+							right: -30px;
+						}
+					}
+					&.desc {
+						display: flex;
+						> * {
+							&:first-child {
+								order: 0;
+							}
+							&:nth-child(2) {
+								order: 2;
+							}
+							&:nth-child(3) {
+								order: 1;
+							}
+							&:nth-child(4) {
+								order: 3;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 940px) {
+	.wrapper {
+		padding: 0 30px;
+	}
+	.profile {
+		#content {
+			.grid {
+				.grid-item-1 {
+					&:before {
+						width: 40px;
+						left: -30px;
+					}
+					&:after {
+						width: 40px;
+						right: -30px;
+					}
+				}
+			}
+		}
+	}
+	#content {
+		.grid {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto;
+			grid-gap: 30px;
+			grid-template-areas: "one one" "six four" "two eight" " five three" " nine seven";
+			.grid-item {
+				min-height: 400px;
+			}
+		}
+	}
+	footer {
+		.wrapper {
+			flex-wrap: wrap;
+			justify-content: space-evenly;
+			> div {
+				.copy {
+					display: none;
+				}
+				&:first-child {
+					order: 3;
+					margin: 80px auto;
+					display: block;
+					width: 100%;
+					text-align: center;
+					position: relative;
+					&:after {
+						content: "© 2020 TheBasic";
+						position: absolute;
+						left: 0;
+						right: 0;
+						bottom: -50px;
+						color: darken($color-bg, 15%);
+					}
+				}
+				&:nth-child(2) {
+					order: 0;
+					margin-left: 0;
+				}
+				&:nth-child(3) {
+					order: 1;
+				}
+				&:nth-child(4) {
+					order: 2;
+					margin-right: 0;
+				}
+			}
+		}
+		svg {
+			max-width: 300px;
+		}
+	}
+	.product {
+		#content {
+			.grid {
+				.grid-item {
+					&.desc {
+						margin: 0 !important;
+					}
+				}
+			}
+		}
+	}
+	.profile {
+		#content {
+			.grid {
+				display: flex;
+				flex-direction: column;
+				.grid-item-1 {
+					display: flex;
+					flex-direction: column;
+					flex-wrap: wrap;
+					padding: 50px 20px;
+					img {
+						max-width: 200px;
+						margin-bottom: 30px;
+					}
+					.desc {
+						max-width: 100%;
+						padding: 0;
+						text-align: center;
+						h1 {
+							font-size: 32px;
+						}
+					}
+				}
+				.grid-item-2 {
+					margin: 0 20px;
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 676px) {
+	.profile {
+		#content {
+			.grid {
+				.grid-item-1 {
+					&:before {
+						width: 40px;
+						left: -20px;
+					}
+					&:after {
+						width: 40px;
+						right: -20px;
+					}
+				}
+			}
+		}
+	}
+	.legal {
+		.text {
+			margin: 0px 20px;
+		}
+	}
+	#nav-main {
+		.nav-right {
+			position: fixed;
+			bottom: 0;
+			left: 0;
+			background-color: $color-bg;
+			z-index: 999;
+			margin: 0;
+			min-height: 80px;
+			width: 100%;
+			border-top: 3px solid darken($color-bg, 10%);
+			justify-content: space-around;
+			.nav-item {
+				a {
+					font-size: 0px;
+					width: 58px;
+					padding: 0;
+					margin: 0;
+					justify-content: center;
+					.nav-icon {
+						height: 26px;
+						width: 26px;
+						margin: 0;
+					}
+					.profile-img {
+						height: 30px;
+						width: 30px;
+						margin: 0;
+					}
+				}
+			}
+		}
+	}
+	.d-mobile {
+		display: block;
+	}
+	#tbs-logo {
+		height: 28px !important;
+	}
+	.wrapper {
+		padding: 0 20px;
+	}
+	.home {
+		#content {
+			.grid {
+				.grid-item:not(.prod) {
+					min-height: unset;
+					margin: 60px 20px;
+				}
+			}
+		}
+	}
+	#content {
+		.grid {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+			grid-gap: 30px;
+			grid-template-areas: "one" "six" "four" "two" "eight" "five" "three" "nine" "seven";
+			.grid-item.prod {
+				min-height: 100vw;
+				background-size: contain;
+			}
+			.card {
+				h1 {
+					font-size: 34px;
+				}
+				p {
+					font-size: 22px;
+				}
+			}
+		}
+	}
+	footer {
+		padding-top: 60px;
+		padding-bottom: 160px;
+		.wrapper {
+			> div {
+				display: block;
+				width: 100%;
+				margin: 10px auto !important;
+				text-align: center;
+				&.copyright {
+					margin-top: 50px !important;
+				}
+				label {
+					margin-bottom: 12px;
+				}
+				.nav-footer {
+					li {
+						margin: 0 auto 10px;
+					}
+				}
+			}
+		}
+	}
+	.home {
+		#content {
+			.grid {
+                grid-template-columns: 1fr !important;
+                grid-template-rows: auto;
+				grid-template-areas: "one" "six" "four" "two" "eight" "five" "three" "nine" "seven" !important;
+			}
+		}
+	}
+	.product {
+		#content {
+			.grid {
+				.grid-item {
+					&.prod {
+						min-height: 45vh;
+						&:before {
+							left: -20px;
+						}
+						&:after {
+							right: -20px;
+						}
+					}
+					&.desc {
+
+						h1,
+						.price {
+							font-size: 34px !important;
+						}
+						p {
+							font-size: 22px !important;
+						}
+						.color-selection {
+							.selector {
+								font-size: 18px;
+								padding: 10px 12px;
+								margin-bottom: 8px;
+								&:not(:last-child) {
+									margin-right: 8px;
+								}
+								&:before {
+									margin-right: 8px;
+									height: 22px;
+									width: 22px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.legal {
+		#content {
+			.grid {
+                grid-template-columns: 1fr;
+                grid-template-rows: auto;
+				grid-template-areas: "one" "two" "three";
+				.grid-item {
+					&.space {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 2320px) {
+	.bag {
+		#content {
+			.grid {
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                grid-template-rows: auto;
+				grid-template-areas: "one one one two two";
+			}
+		}
+	}
+}
+@media screen and (max-width: 1920px) {
+	.bag {
+		#content {
+			.grid {
+				grid-gap: 60px;
+			}
+		}
+		.payment .payment-select > span {
+			&.paypal {
+				.logo {
+					height: 28px;
+				}
+			}
+			&.creditcard {
+				.logo {
+					height: 26px;
+				}
+			}
+			&.klarna {
+				.logo {
+					height: 20px;
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 1600px) {
+	.bag {
+		#content {
+			.grid {
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+                grid-template-rows: auto;
+				grid-template-areas: "one one one one two two two";
+				grid-gap: 40px;
+			}
+		}
+		.items {
+			padding: 0 !important;
+		}
+		.payment .payment-select > span {
+			&.paypal {
+				.logo {
+					height: 28px;
+				}
+			}
+			&.creditcard {
+				.logo {
+					height: 26px;
+				}
+			}
+			&.klarna {
+				.logo {
+					height: 20px;
+				}
+			}
+		}
+	}
+
+}
+@media screen and (max-width: 1380px) {
+	.bag {
+		#content {
+			.grid {
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: auto;
+				grid-template-areas: "one two";
+				grid-gap: 40px;
+			}
+		}
+		.items {
+			.item {
+				flex-wrap: wrap;
+				padding: 30px 0;
+				.image {
+					width: 250px;
+					height: 250px;
+				}
+				.desc {
+					width: 50%;
+				}
+				.amount {
+					width: 50%;
+					margin: 0;
+					padding: 0 0 0 30px;
+					display: flex;
+					justify-content: flex-end;
+				}
+				.price {
+					width: 50%;
+					margin: 0;
+					padding: 0 30px 0 0;
+					display: flex;
+					justify-content: flex-end;
+					align-items: center;
+					span {
+						display: inline-block;
+						margin-left: 8px;
+					}
+				}
+			}
+		}
+		.payment {
+			font-size: 20px;
+			.input-container {
+				font-size: 20px;
+			}
+			button.checkout {
+				margin-top: 10px;
+			}
+			form {
+				.form-grid {
+					&.adress-1 {
+						grid-template-areas: "one one one one two two";
+					}
+				}
+			}
+			.payment-select > span {
+				min-height: 100px;
+				&.paypal {
+					.logo {
+						height: 22px;
+					}
+				}
+				&.creditcard {
+					.logo {
+						height: 26px;
+					}
+				}
+				&.klarna {
+					.logo {
+						height: 18px;
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 1130px) {
+	.bag {
+		h1 {
+			font-size: 34px !important;
+			margin: 80px 0px 50px;
+		}
+		#content {
+			.grid {
+                grid-template-columns: 1fr;
+                grid-template-rows: auto;
+				grid-template-areas: "one" "two";
+			}
+		}
+		.payment {
+			margin-top: 40px;
+			.payment-select > span {
+				min-height: 150px;
+				&.paypal {
+					.logo {
+						height: 34px;
+					}
+				}
+				&.creditcard {
+					.logo {
+						height: 40px;
+					}
+				}
+				&.klarna {
+					.logo {
+						height: 28px;
+					}
+				}
+			}
+			form {
+				.form-grid {
+					&.adress-1 {
+						grid-template-areas: "one one one one one two";
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 937px) {
+	.bag {
+		#content .grid .grid-item {
+			margin: 0 !important;
+		}
+		.items {
+			.item {
+				flex-wrap: wrap;
+				padding: 0 0 40px;
+				.image {
+					width: 100%;
+					height: 300px;
+					background-size: contain;
+					background-position: center;
+					background-repeat: no-repeat;
+				}
+				.desc {
+					width: 100%;
+					padding: 0px 30px;
+					flex-direction: column;
+					align-items: center;
+					.name {
+						font-size: 32px;
+						margin: 20px auto 12px;
+					}
+					.logo {
+						width: 30px;
+						opacity: .2;
+					}
+				}
+				.amount {
+					width: 100%;
+					margin: 0;
+					padding: 40px 30px;
+					justify-content: center;
+					display: flex;
+					input {
+						margin: 0px 15px;
+						border: 4px solid transparent;
+						&:focus, &:active {
+							border-color: #000;
+						}
+					}
+				}
+				.price {
+					width: 100%;
+					margin: 0;
+					padding: 0 30px;
+					display: flex;
+					justify-content: center;
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 676px) {
+	.bag {
+		> .wrapper {
+			padding: 0;
+			#nav-main, .card {
+				padding: 0px 20px !important;
+			}
+			.items {
+				padding: 0px 20px !important;
+			}
+			.payment {
+				padding: 30px 20px !important;
+				border-radius: 0px;
+				button.checkout {
+					display: block;
+					width: 100%;
+					text-align: center;
+					padding: 30px 0 !important;
+					margin-top: 40px;
+				}
+				.payment-select {
+					grid-gap: 15px;
+					> span {
+						min-height: 105px;
+						.logo {
+							margin: auto;
+						}
+						&.paypal {
+							.logo {
+								height: 100%;
+								max-width: 85%;
+							}
+						}
+						&.creditcard {
+							.logo {
+								height: 100%;
+								max-width: 60%;
+							}
+						}
+						&.klarna {
+							.logo {
+								height: 100%;
+								max-width: 75%;
+							}
+						}
+					}
+				}
+			}
+			.compiled {
+				padding: 0;
+			}
+			form {
+				.form-grid {
+                    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+                    grid-template-rows: auto;
+					grid-gap: 15px;
+					&.name {
+						grid-template-areas: "one one one one two two two two";
+					}
+					&.adress-1 {
+						grid-template-areas: "one one one one one two two two";
+					}
+					&.adress-2 {
+						grid-template-areas: "one one one two two two two two";
+					}
+				}
+			}
+		}
+	}
+}

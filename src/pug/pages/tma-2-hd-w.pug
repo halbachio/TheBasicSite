@@ -1,0 +1,29 @@
+include ../mixins/mixins
+doctype doctype
+html(lang='en')
+    head
+        - const siteTopic = { name:'TMA-2' }
+        +meta(siteTopic)
+    body#main.product.tda-2.aiaiai.hd
+        .noise
+        .wrapper
+            include ../includes/nav
+            #content
+                .grid
+                    .grid-item.grid-item-1.prod 
+                    // Image goes here
+                    .grid-item.grid-item-2.desc
+                        h1
+                            span.company AIAIAI
+                            span.product-name TMA-2
+                        p.  
+                            The TMA-2 is an award winning headphone trusted by artists all over the world.
+                            Combining AIAIAIs responsible design philosophy and heritage of Scandinavian design, it is a modular headphone with professional sound quality.
+                        .color-selection
+                            button.selector#hd HD Wireless
+                            button.selector#comfort Comfort Wireless
+                            button.selector#move Move Wireless
+                        span.price 159 EUR
+
+        include ../includes/footer
+        include ../includes/footerscripts

@@ -1,0 +1,38 @@
+include ../mixins/mixins
+doctype doctype
+html(lang='en')
+    head
+        - const siteTopic = { name:'Imprint' }
+        +meta(siteTopic)
+    body#main.legal
+        .noise
+        .wrapper
+            include ../includes/nav
+        #content
+            .grid
+                .grid-item.grid-item-1.space
+                .grid-item.grid-item-2.text
+
+                    h1 Imprint
+                    p The following information is required under German law &sect;5 TMG.
+                    p Robert Halbach
+                        br
+                        | Vor den Siebenburgen 33,
+                        br
+                        | 50676 Köln
+                        br
+                        | Tel.: +49 15226942292
+                        br
+                        | Mail: 
+                        a(href='mailto:robert@halbach.io') robert@halbach.io
+                        br
+                    h2 Online Dispute Resolution website of the EU Commission
+                    p In order for consumers and traders to resolve a dispute out-of-court, the European Commission developed the Online Dispute Resolution Website: www.ec.europa.eu/consumers/odr
+                    h2 Legal disclaimer
+                    p The contents of these pages were prepared with utmost care. Nonetheless, we cannot assume liability for the timeless accuracy and completeness of the information.
+                    p Our website contains links to external websites. As the contents of these third-party websites are beyond our control, we cannot accept liability for them. Responsibility for the contents of the linked pages is always held by the provider or operator of the pages.
+
+
+                .grid-item.grid-item-2.space
+                    
+        include ../includes/footer

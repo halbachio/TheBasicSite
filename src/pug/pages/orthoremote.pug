@@ -1,0 +1,32 @@
+include ../mixins/mixins
+doctype doctype
+html(lang='en')
+    head
+        - const siteTopic = { name:'Orthoremote' }
+        +meta(siteTopic)
+    body#main.product.ortho.teenageengineering.red
+        .noise
+        .wrapper
+            include ../includes/nav
+            #content
+                .grid
+                    .grid-item.grid-item-1.prod 
+                    // Image goes here
+                    .grid-item.grid-item-2.desc
+                        h1
+                            span.company Teenage engineering
+                            span.product-name Ortho Remote
+                        p.  
+                            Ortho Remote is the wireless remote control designed for OB–4 and OD-11. 
+                            With ortho remote you can adjust the volume, skip track and pause. 
+                            The ortho remote features a magnetic back and a non-slip bottom.
+                        .color-selection
+                            button.selector#red Red
+                            button.selector#black Black
+                            button.selector#blue Blue
+                            button.selector#yellow Yellow
+                            button.selector#white White
+                        span.price 159 EUR
+
+        include ../includes/footer
+        include ../includes/footerscripts

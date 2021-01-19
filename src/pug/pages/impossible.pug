@@ -1,0 +1,27 @@
+include ../mixins/mixins
+doctype doctype
+html(lang='en')
+    head
+        - const siteTopic = { name:'Impossible l-1' }
+        +meta(siteTopic)
+    body#main.product.impossible.teenageengineering.black
+        .noise
+        .wrapper
+            include ../includes/nav
+            #content
+                .grid
+                    .grid-item.grid-item-1.prod 
+                    // Image goes here
+                    .grid-item.grid-item-2.desc
+                        h1
+                            span.company Teenage engineering
+                            span.product-name Impossible l-1
+                        p. 
+                            The I-1 is the first new camera system in over twenty years for the original Polaroid® instant photo format. 
+                            It's an easy to use point and shoot instant camera, with a variety of unique and innovative features designed to take your photography further.
+                        .color-selection
+                            button.selector#black Black
+                        span.price 79 EUR
+
+        include ../includes/footer
+        include ../includes/footerscripts

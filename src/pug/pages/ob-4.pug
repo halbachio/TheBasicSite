@@ -1,0 +1,29 @@
+include ../mixins/mixins
+doctype doctype
+html(lang='en')
+    head
+        - const siteTopic = { name:'OB-4' }
+        +meta(siteTopic)
+    body#main.product.ob-4.teenageengineering.green-b
+        .noise
+        .wrapper
+            include ../includes/nav
+            #content
+                .grid
+                    .grid-item.grid-item-1.prod 
+                    // Image goes here
+                    .grid-item.grid-item-2.desc
+                        h1
+                            span.company Teenage engineering
+                            span.product-name OB-4
+                        p.  
+                            Introducing OB–4, magic radio. The incredible sounding portable hifi stereo with line-in, wireless audio, and the evolution of radio. OB–4 memorizes everything you play on an endless looping tape. Rewind the radio and remix anything. Comes with a folding handle that doubles as a stand. Ultra power efficient with up to a week of music listening.
+                        .color-selection
+                            button.selector#green-b Green + Bag
+                            button.selector#black-b Black + Bag
+                            button.selector#red Red
+                            button.selector#black Black
+                        span.price 649 EUR
+
+        include ../includes/footer
+        include ../includes/footerscripts

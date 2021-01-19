@@ -1,0 +1,55 @@
+@font-face {
+    font-family:'Folito';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: 
+      local('Folito'),
+      local('Folito Medium'),
+      url(../fonts/folito/folito-medium.otf) format('otf');
+}
+@font-face {
+    font-family:'Folito Bold';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: 
+      local('Folito'),
+      local('Folito Bold'),
+      url(../fonts/folito/folito-bold.otf) format('otf');
+}
+@font-face {
+    font-family:'Trap';
+    font-style: normal;
+    font-weight: 400;
+    /*font-display: swap;*/
+    src:
+      url(../fonts/trap/trap-regular.otf) format('otf');
+}
+@font-face {
+    font-family:'Trap Medium';
+    font-style: normal;
+    font-weight: 500;
+    /*font-display: swap;*/
+    src:
+      url(../fonts/trap/trap-medium.otf) format('otf');
+}
+@font-face {
+    font-family:'Trap Semibold';
+    font-style: normal;
+    font-weight: 600;
+    /*font-display: swap;*/
+    src:
+      url(../fonts/trap/trap-semibold.otf) format('otf');
+}
+@font-face {
+    font-family:'Trap Bold';
+    font-style: normal;
+    font-weight: 800;
+    /*font-display: swap;*/
+    src: 
+      url(../fonts/trap/trap-bold.otf) format('otf');
+}
+body {
+	font-family: 'Folito', sans-serif;
+}

@@ -1,0 +1,107 @@
+include ../mixins/mixins
+doctype doctype
+html(lang='en')
+    head
+        - const siteTopic = { name:'Bag' }
+        +meta(siteTopic)
+    body#main.bag
+        .noise
+        .wrapper
+            include ../includes/nav
+            #content
+                .card
+                    h1 Your bag
+                    p.info-box.
+                        Shipping may take a few days longer due to the ongoing COVID-19 pandemic. Total delivery time should not extend 72 hours for shoppers in Germany.
+                .grid
+                    .grid-item.grid-item-1.items
+                        hr
+                        .item.teenageengineering.od-11.red
+                            span.image
+                            span.desc
+                                h3.name OD-11&nbsp;
+                                    span.color
+                                span.logo
+                            span.amount
+                                span.control 
+                                    span.control-inner +
+                                input(type='text' value='1' name='amount')
+                                span.control 
+                                    span.control-inner -
+                            span.price 999 EUR
+                        hr
+                        .item.teenageengineering.od-11.black
+                            span.image
+                            span.desc
+                                h3.name OD-11&nbsp;
+                                    span.color
+                                span.logo
+                            span.amount
+                                span.control 
+                                    span.control-inner +
+                                input(type='text' value='1' name='amount')
+                                span.control 
+                                    span.control-inner -
+                            span.price 999 EUR
+                        hr
+                        .item.teenageengineering.od-11.yellow
+                            span.image
+                            span.desc
+                                h3.name OD-11&nbsp;
+                                    span.color
+                                span.logo
+                            span.amount
+                                span.control 
+                                    span.control-inner +
+                                input(type='text' value='1' name='amount')
+                                span.control 
+                                    span.control-inner -
+                            span.price 999 EUR
+                        .compiled
+                            .shipping Free Shipping
+                            .total 2997 EUR
+                    .grid-item.grid-item-2.payment
+                        h2 Shipping info
+                        form.shopping-info(autocomplete)
+                            span.name.form-grid
+                                span.form-grid-item
+                                    label(for='firstname') First name
+                                    input#firstname(type='text' name='firstname')
+                                span.form-grid-item
+                                    label(for='lastname') Last name
+                                    input#lastname(type='text' name='lastname')
+                            span.adress-1.form-grid
+                                span.form-grid-item
+                                    label(for='street') Street
+                                    input#street(type='text' name='street')
+                                span.form-grid-item
+                                    label(for='number') Nr
+                                    input#number(type='text' name='number')
+                            span.adress-2.form-grid
+                                span.form-grid-item
+                                    label(for='zip') Zip
+                                    input#zip(type='text' name='zip')
+                                span.form-grid-item
+                                    label(for='number') City
+                                    input#number(type='text' name='number')
+                        h2 Billing
+                        form.adress-comp
+                            label.input-container My billing adress matches my delivery adress.
+                                input(type='checkbox' checked)
+                                span.checkmark
+                        .payment-select
+                            span.paypal
+                                span.logo
+                            span.creditcard
+                                span.logo
+                            span.klarna
+                                span.logo
+                        form.legal-check
+                            label.input-container I have read and agree to the Terms &amp; Conditions.
+                                input(type='checkbox')
+                                span.checkmark
+                            label.input-container I want to recieve news and updates via mail.
+                                input(type='checkbox')
+                                span.checkmark
+                        button.checkout Place order
+        include ../includes/footer

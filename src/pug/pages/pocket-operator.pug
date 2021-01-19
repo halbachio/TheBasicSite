@@ -1,0 +1,28 @@
+include ../mixins/mixins
+doctype doctype
+html(lang='en')
+    head
+        - const siteTopic = { name:'Pocket Operator Modular 400' }
+        +meta(siteTopic)
+    body#main.product.pocket-operator.teenageengineering.yellow
+        .noise
+        .wrapper
+            include ../includes/nav
+            #content
+                .grid
+                    .grid-item.grid-item-1.prod 
+                    // Image goes here
+                    .grid-item.grid-item-2.desc
+                        h1
+                            span.company Teenage engineering
+                            span.product-name Pocket Operator Modular 400
+                        p. 
+                            The POM-400 is a home-build analog synthesizer with 3 oscillators, noise, random generator, 2 envelopes, 2 vca’s, lfo, filter, mixer, speakerbox, power pack and a 1-16 step sequencer. 
+                            Complete kit with powder coated aluminum chassis, 16 modules, 15 patch cables, screwdriver, and an illustrated build guide. 
+                            16 modules and 15 patch cables included.
+                        .color-selection
+                            button.selector#yellow Yellow
+                        span.price 599 EUR
+
+        include ../includes/footer
+        include ../includes/footerscripts

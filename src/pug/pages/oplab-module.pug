@@ -1,0 +1,27 @@
+include ../mixins/mixins
+doctype doctype
+html(lang='en')
+    head
+        - const siteTopic = { name:'Oplab Module' }
+        +meta(siteTopic)
+    body#main.product.oplab-module.teenageengineering.yellow
+        .noise
+        .wrapper
+            include ../includes/nav
+            #content
+                .grid
+                    .grid-item.grid-item-1.prod 
+                    // Image goes here
+                    .grid-item.grid-item-2.desc
+                        h1
+                            span.company Teenage engineering
+                            span.product-name Oplab Module
+                        p. 
+                            Imagine having the power and flexibility of the OP-Z sequencer available to any other music equipment. 
+                            Now you can, with the new oplab module - the magic link between OP-Z and the rest of the world.
+                        .color-selection
+                            button.selector#yellow Yellow
+                        span.price 159 EUR
+
+        include ../includes/footer
+        include ../includes/footerscripts

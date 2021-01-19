@@ -1,0 +1,59 @@
+include ../mixins/mixins
+doctype doctype
+html(lang='en')
+    head
+        - const siteName = { name:'Home' }
+        +meta(siteName)
+    body#main.home
+        .noise
+        .wrapper
+            include ../includes/nav
+            #content
+                .grid
+                    .grid-item.grid-item-1
+                        .card
+                            h1 Simplicity is beautiful.
+                            p Here at basic we think that there is beauty in minimalism and functionality. Therefore we curated a few chosen products that deserved their place in our minimalist hearts. We hope you enjoy them as much as we do!
+                    .grid-item.grid-item-2.prod
+                        a.item-link(href='impossible.html')
+                            .prod-desc
+                                .name Teenage Engineering Impossible I-1 Instant Camera
+                                .price 79 EUR
+                    .grid-item.grid-item-3.prod
+                        a.item-link(href='od-11.html')
+                            .prod-desc
+                                .name Teenage Engineering OD-11
+                                .price 999 EUR
+                    .grid-item.grid-item-4.prod
+                        a.item-link(href='oplab-module.html')
+                            .prod-desc
+                                .name Teenage Engineering Oplab Module
+                                .price 159 EUR
+                    .grid-item.grid-item-5
+                        .card
+                            p You find our product selection interesting? Make sure to also follow us on 
+                                a.textlink(href='https://www.instagram.com/hlb_io/' rel='noopener' target='_blank') Instagram
+                                | &nbsp;&amp;&nbsp;
+                                a.textlink(href='https://behance.net' rel='noopener' target='_blank') Behance
+                                | .
+                    .grid-item.grid-item-6.prod
+                        a.item-link(href='ob-4.html')
+                            .prod-desc
+                                .name Teenage Engineering OB-4
+                                .price 649 EUR
+                    .grid-item.grid-item-7.prod
+                        a.item-link(href='pocket-operator.html')
+                            .prod-desc
+                                .name Teenage Engineering Pocket Operater 400
+                                .price 599 EUR
+                    .grid-item.grid-item-8.prod
+                        a.item-link(href='tma-2-hd-w.html')
+                            .prod-desc
+                                .name AIAIAI TMA-2
+                                .price 350 EUR
+                    .grid-item.grid-item-9.prod
+                        a.item-link(href='orthoremote.html')
+                            .prod-desc
+                                .name Teenage Engineering Ortho Remote
+                                .price 99 EUR
+        include ../includes/footer

@@ -1,0 +1,22 @@
+mixin meta(siteName)
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet' type='text/css' href='css/main.min.css')
+    title= siteName.name + ' - TheBasicSite'
+    meta(name='msapplication-TileColor' content='#EDF0F2')
+    meta(name='theme-color' content='#EDF0F2')
+
+mixin order(details)
+    .dot
+        span
+    .desc
+        .order-nr='Order #' + details.nr
+        .details
+            span= details.date
+            span= details.amount + ' EUR'
+            span= details.status
+    .options
+        .dots
+            span
+            span
+            span
